@@ -6,14 +6,11 @@ import location show Location
 import serialization
 
 /**
-Class for Globale Navigation Satellite System (GNSS) locations.
-
-A GNSS location is comprised of a location, an altitude, a time, and
-  an accuracy of the given location.
+Support for Global Navigation Satellite System (GNSS) locations.
 */
 
 /**
-A  Globale Navigation Satellite System (GNSS location.
+A  Globale Navigation Satellite System (GNSS) location.
 
 A GNSS location is comprised of a location, an altitude, a time, and
   an accuracy of the given location.
@@ -73,4 +70,5 @@ class GnssLocation extends Location:
 
   /** The hash code. */
   hash_code -> int:
-    return super + time.hash_code * 19 + horizontal_accuracy * 23 + vertical_accuracy * 29 + horizontal_accuracy * 37 + altitude_msl * 41
+    return super + time.hash_code * 19 + horizontal_accuracy * 23
+        + vertical_accuracy * 29 + horizontal_accuracy * 37 + altitude_msl * 41
