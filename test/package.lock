@@ -1,0 +1,11 @@
+prefixes:
+  gnss_location: ..
+  location: toit-location
+packages:
+  ..:
+    path: ..
+    prefixes:
+      location: toit-location
+  toit-location:
+    url: github.com/toitware/toit-location
+    version: 1.0.0
