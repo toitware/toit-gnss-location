@@ -19,11 +19,11 @@ class GnssLocation extends Location:
   /** The time (UTC) when this location was recorded. */
   time/Time
   /** The horizontal accuracy. */
-  horizontal_accuracy ::= 0.0
+  horizontal_accuracy/float ::= 0.0
   /** The vertical accuracy. */
-  vertical_accuracy ::= 0.0
+  vertical_accuracy/float ::= 0.0
   /** The altitude relative to the median sea level. */
-  altitude_msl ::= 0.0
+  altitude_msl/float ::= 0.0
 
   /** Constructs a GNSS location from the given parameters. */
   constructor location .altitude_msl .time .horizontal_accuracy .vertical_accuracy:
