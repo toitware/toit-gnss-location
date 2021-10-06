@@ -24,5 +24,7 @@ main:
   expect_equals hacc gnss_loc.horizontal_accuracy
   expect_equals vacc gnss_loc.vertical_accuracy
 
+  expect_equals -8726026805924654080 gnss_loc.hash_code
+
   gnss_loc_deserialized ::= GnssLocation.deserialize gnss_loc.to_byte_array
   expect gnss_loc_deserialized == gnss_loc
