@@ -70,5 +70,5 @@ class GnssLocation extends Location:
 
   /** The hash code. */
   hash_code -> int:
-    return super + time.hash_code * 19 + horizontal_accuracy * 23
-        + vertical_accuracy * 29 + horizontal_accuracy * 37 + altitude_msl * 41
+    return (super + time.hash_code * 19 + horizontal_accuracy * 23
+        + vertical_accuracy * 29 + horizontal_accuracy * 37 + altitude_msl * 41).to_int
