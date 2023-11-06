@@ -1,3 +1,5 @@
+name: gnss_location
+description: Support for locations produced by a Global Navigation Satellite Systems (GNSS).
 dependencies:
   location:
     url: github.com/toitware/toit-location
