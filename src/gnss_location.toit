@@ -3,7 +3,7 @@
 // in the LICENSE file.
 
 import location show Location
-import serialization
+import encoding.tison
 
 /**
 Support for Global Navigation Satellite System (GNSS) locations.
@@ -36,7 +36,7 @@ class GnssLocation extends Location:
   This is the inverse operation of $to_byte_array.
   */
   constructor.deserialize bytes/ByteArray?:
-    values := serialization.deserialize bytes
+    values := tison.decode bytes
     return GnssLocation
       Location values[0] values[1]
       values[2]
@@ -50,7 +50,7 @@ class GnssLocation extends Location:
   This is the inverse operation of $GnssLocation.deserialize.
   */
   to_byte_array:
-    return serialization.serialize [
+    return tison.encode [
       latitude,
       longitude,
       altitude_msl,
