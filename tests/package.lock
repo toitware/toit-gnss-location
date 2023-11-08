@@ -8,5 +8,6 @@ packages:
       location: toit-location
   toit-location:
     url: github.com/toitware/toit-location
-    version: 1.0.0
-    hash: 080665c10587c1ef82e26b993dda7fa560cf2075
+    name: location
+    version: 1.1.0
+    hash: bf2c8cbd54d6d7d185948f67240e921c1b0d7d54
